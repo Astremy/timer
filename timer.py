@@ -8,8 +8,6 @@ RPC.connect()
 
 event = datetime(2020,1,1)
 
-#start_time = time.time()
-
 while True:
     now = datetime.now()
     td = event - now
@@ -34,7 +32,7 @@ while True:
     else:
         state = etat[-1]
 
-    RPC.update(details = "Attends la nouvelle année", state = state, large_image = "rem")#, start=start_time)
+    RPC.update(details = "Attends la nouvelle année", state = state, large_image = "rem")
 
     time.sleep(1)
     
